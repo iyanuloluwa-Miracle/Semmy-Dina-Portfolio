@@ -93,6 +93,19 @@ section{
 
 .home-img img{
     width: 29vw;
+    animation: floatImage 4s ease-in-out infinite;
+}
+
+@keyframes floatImage {
+    0%{
+        transform: translateY(0);
+    }
+    50%{
+        transform: translateY(-2.4rem);
+    }
+    100%{
+        transform: translateY(0);
+    }
 }
 
 .home-content h3{
@@ -514,6 +527,17 @@ span{
         
     }
 
+    .about-content h3 {
+        font-size: 4.2rem;
+        font-weight: 700;
+
+    }
+
+    .about-content p{
+        font-size: 1.9rem;
+        margin: 2rem 0 3rem;
+    }
+
     .services h2{
         margin-bottom: 3rem;
          
@@ -562,6 +586,11 @@ span{
 
     .footer {
         flex-direction: column-reverse;
+    }
+
+    .footer p{
+        text-align: center;
+        margin-top: 2rem;
     }
     
  
